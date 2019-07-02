@@ -190,3 +190,38 @@ def prob_2(word1,word2):
     
     Data Driven
 
+Language Model
+
+pr(w1|w2w3w4)    count(w1)/count(w2w3w4)
+Pro(w1w2w3w4)~ Pr(w1|w2)
+def prob(string):
+
+finename = ""
+import pandas as pd
+content = pd.read_csv(filename,encoding="gb18030)
+content.head()
+articles = content["content"].tolist
+articles 
+len(articles)
+articles[110]
+
+import re 
+def token(string):
+   return re.findall("\w+",string)
+   "".join(token(articles[110] 
+  articles_clean = ["".join (token(str(a)) for a in articles)
+  
+  !pip install jieba 
+  import jieba 
+  from collections import Counter
+  jieba.cut(articles[110])
+  with_jieba_cut.most_common()
+  with_jieba_cut.most_common()
+  
+  articles_words=
+  cut(string) for string in articles_clean 
+  TOKENS=[]
+  from functools import reduce
+  from operate import add,mul 
+  
+   
