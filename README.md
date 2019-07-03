@@ -1,5 +1,5 @@
 # lesson-01 Assignment 
-#1 复现课堂代码 
+1 复现课堂代码 
 
 noun_phrase => Article Adj* noun
 Adj* => null | Adj Adj*
@@ -299,7 +299,28 @@ for i , line in enumerate((open("articles_9k.txt"）））：
     print("-"*4+" {} wiht probablity {}".format(s1,p2))
     
     
+  5. 完成以下问答和编程练习
   
+  5.1 回答问题
   
+  0. Can you come up out 3 sceneraies which use AI mehods?  
+  medical, auot-drive , education, sale, home automation
+  1. How do we use Github; Why do we use Jupyter and Pycharm;
+  
+  2. What's the Probablity Model?
+  3. Can you came up wiht some sceneraies at which we use Probablity Model？
+  4. Why do we use probablity and what's the difficult points for programming based on parsing and pattern match?
+  5. What's the Language Model?
+  6. Can you came up with some sceneraies at which we could use Language Model?
+  7. What's the 1-gram language model ?
+  8. what's the disadvanges and advantages of 1-gram language model？
+  9. what's the 2-gram model?
+  
+  5.2 编程实践部分
+  1. 设计自己的句子生成器
+  2. 使用新数据源完成语言模型的训练
+  3. 获得最优质的语言
+  4. 完成基于Pattern Match的语句问答
+  5. 完成阿兰图灵机器智能原始论文的阅读
   
 
