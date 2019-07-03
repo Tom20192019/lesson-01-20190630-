@@ -1,4 +1,6 @@
-# lesson-01-20190630-
+# lesson-01 Assignment 
+#1 复现课堂代码 
+
 noun_phrase => Article Adj* noun
 Adj* => null | Adj Adj*
 verb_phase => verb noun_phrase 
@@ -192,16 +194,13 @@ def prob_2(word1,word2):
 
 Language Model
 
-pr(w1|w2w3w4)    count(w1)/count(w2w3w4)
-Pro(w1w2w3w4)~ Pr(w1|w2)
-def prob(string):
-
+ 
 finename = ""
 import pandas as pd
 content = pd.read_csv(filename,encoding="gb18030)
 content.head()
 articles = content["content"].tolist
-articles 
+ 
 len(articles)
 articles[110]
 
@@ -209,19 +208,98 @@ import re
 def token(string):
    return re.findall("\w+",string)
    "".join(token(articles[110] 
-  articles_clean = ["".join (token(str(a)) for a in articles)
-  
-  !pip install jieba 
-  import jieba 
-  from collections import Counter
-  jieba.cut(articles[110])
-  with_jieba_cut.most_common()
-  with_jieba_cut.most_common()
-  
-  articles_words=
-  cut(string) for string in articles_clean 
-  TOKENS=[]
-  from functools import reduce
-  from operate import add,mul 
-  
    
+from collections import Counter
+with_jieba_cut = Counter(jieba.cut(articles[110]))
+wiht_jieba_cut.most_common[:10]
+"".join(token(articles[110]))
+articles_clean = ["".join(token(str(a))) for a in articles]
+len(articles_clean)
+with open("article_9k.txt","w") as f:
+for a in articles_clean:
+f.write(a+"\n")
+
+def cut(string): return list (jieba.cut(string))
+import jieba 
+def cut(string): return list (jieba.cut(string))
+TOKEN=[]
+for i , line in enumerate((open("articles_9k.txt"）））：
+  ifi% 100==0： print(i)
+  if i > 10000: break
+  TOKEN+= cut(line)
+  
+  from functools inport reduce 
+  from operator import add, mul
+  redunce(add,[1,2,3,4,5,8]
+  [1,2,3,]+[3,43,5]
+  
+  from collections imprt Counter 
+  words_count = Counter(TOKEN)
+  words_count.most_commom(100)
+  
+  frenquiences = [ f doe w, f in words_count.most_common(100)]
+  x = [i for i in range(100)]
+  %matplotlib inline 
+  inport matplotlib.pyplot as plt 
+  plt.plt(x, frequiences)
+  
+  import numpy as np 
+  plt.plot(x, np.log(frequiences))
+  
+  def prob_1(word):
+    return words_count[word] / len(TOKEN) 
+  prob_1("我们")
+  TOKEN[:10]
+  TOKEN = [str(t) for t in TOKEN 
+  TOKEN_2_GRAM = ["".join)TOKEN[i:i+2] for i in range(len(TOKEN[:-2]))]
+  TOKEN_2_GRAM[:10]
+  words_count_2 = Counter(TOKEN_2_FRAM)
+  def prob_1(word) : return wors_count[word] / len(TOKEN)
+  
+  def prob_2(word1,word2):
+  if word1 + word2 in words_count_2: return words_count_2[word1+word2] / [len(TOKEN_2_GRAM)
+  else:
+  retun 1 / len(TOKEN_2_GRAM)
+  
+  prob_2("我们","在")
+  prob_2("在","吃饭")
+  prob_2("去","吃饭")
+  
+  def get_probablity(sentence):
+  words =  cut(sentence)
+  sentence_pro = 1 
+  for in ,word in enumerate(words[:-1]):
+  next_ = words[i+1] 
+  probablity = prob_2(wors,next_)
+  sentenxe_prob * = probablity 
+  retunr sentence_pro 
+  
+  get_probablity("小明今天抽奖抽到一台苹果手机")
+  get_probablity("小明今天抽奖抽到一架波音飞机")
+  
+  get_probablity("洋葱奶昔来一杯")
+  get_probablity("养乐多绿来一杯")
+  
+  for sen in [generate(gram = example_grammar, target="sentence") for i in range(10):
+  print("sentence:{} with Pro: {}.format(sen,get_probablity(sen))
+  
+  need_compared = [
+      "今天晚上请你吃大餐，我们一起吃日料 明天晚上请你吃大餐，我们一起吃苹果",
+    "真事一只好看的小猫 真是一只好看的小猫",
+    "今晚我去吃火锅 今晚火锅去吃我",
+    "洋葱奶昔来一杯 养乐多绿来一杯"]
+    
+    for s in need_compared:
+    s1, s2 = s.split()
+    p1,p2 = get_probablity(s1),get_probablity(s2)
+    better = s1 if p1 > p2 else s2 
+    
+    print("{} is more possible".format(better))
+    print("-"*4+" {} with probablity {}".format(s1,p1))
+    print("-"*4+" {} wiht probablity {}".format(s1,p2))
+    
+    
+  
+  
+  
+
