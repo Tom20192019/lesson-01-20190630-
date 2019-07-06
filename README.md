@@ -299,6 +299,89 @@ for i , line in enumerate((open("articles_9k.txt"）））：
     print("-"*4+" {} wiht probablity {}".format(s1,p2))
     
     
+    
+    Language Model
+      filename =("C:/Users/tyx51/file/train.txt")
+import pandas as pd
+content = pd.read_csv("train.txt",sep="\t")
+content.head()
+articles  = content["cotent"].tolist
+len(articles)
+import re
+def token(string):
+  return re.findall("\W+",string)
+  from collection import Counter 
+  with jieba_cut = Counter(jieba.cut9(articles[110]))
+  with jiaba_cut.most_common()[:10]
+  "".join(token(articels[110])
+  artilcles_clean = ["".join(token(str(a) ))) for a in articles]
+  len(articles)
+  with open("articles_9k.txt","w") as f:
+    for a in articles_clean:
+    f.write(a+"\n")
+def cut(string): return list(jieba.cut(string))
+import jieab 
+def cut(string):return list(jieba.cut(string)
+TOKEN = []
+for i ,line in enumerate ((open("articles_9k.txt")))
+  if i % 100 == 0: print(i)
+  if i > 10000: break 
+  TOKEN+= cut(line)
+  from functools import Counter 
+  from operator import add,mul
+  reduce(add,[1,2,3,4,5,8])
+  from collections import Conter
+  words_count.most_commom 
+  frequiences = [f for w, f in words_count.most_common(100)]
+  x= [i  for i in range(100)]
+  %matplotlib inline 
+  import matplotlib.pylot as plt 
+  plt.plot(x,frequiences)
+  import nunmoy as np 
+  plt.plot(x,np.log(frequiences))
+  def prob_1(word):
+    return words_count[word]/ len(TOKEN)
+    prob_1("我们”）
+    TOKEN[:10]
+    TOKEN = [str(t) for t in TOKEN]
+    KOKEN_2_GRAM = ["".join(TOKEN[:i:i+2] for i in range(len(TOKEN[:-2]))]
+    TOKEN_2_GRAM[:10]
+    words_count_2 = Counter(TOKEN_2_GRAM)
+    def prob_1(word): return words_count[word] / len(TOKEN)
+    def prob_2(word1,word2):
+    if word1 + word2 in word_count_2: reurn words_count_2[word1+word2] / len(TOKEN_2_GRAM)
+    else:
+    return 1 / len(TOKEN_2_GRAM)
+    prob_2("我们","在")
+    prob_2("在","吃饭")
+    prob_2("去","吃饭")
+    def get_probability(sentence):
+    words = cut(sentence)
+    sentence_pro = 1
+    for i, word in enumarate(word,next_)
+    sentence_pro * = probablity 
+    return sentence_pro
+    get_probablity("小明今天抽奖抽到一台苹果手机")
+    get_probablity("小明今天抽奖抽到一架波音飞机")
+    get_probablity("洋葱奶昔来一杯")
+    get_probablity("养乐多绿来一杯")
+    
+    for sen in [generate(gram=example_grammar, target="sentence") for i in range(10)]:
+      print("sentence: {} wiht Pro: {}".fomat(sen,get_probablity(sen)))
+    need_compared = [
+        "今天晚上请你吃大餐，我们一起吃日料 明天晚上请你吃大餐，我们一起吃苹果",
+    "真事一只好看的小猫 真是一只好看的小猫",
+    "今晚我去吃火锅 今晚火锅去吃我",
+    "洋葱奶昔来一杯 养乐多绿来一杯"
+      ] 
+      for s in need_compared:
+      s1,s2 = s.split()
+      p1,p2 = get_probablity(s1),get_probablity(s2)
+      better = s1 if p1 > p2 else s2 
+      print("{} idmore possible".format (better))
+      print("-"*4+' {} with probablity {}'.format(s1,p1))
+      print("-"*4+' {} with probablity {}'.format(s1,p2)
+  
   5. 完成以下问答和编程练习
   
   5.1 回答问题
@@ -371,11 +454,7 @@ bot = 寒暄 报数 询问 业务相关 结尾
 女士,你好我是2号销售经理,您需要询问哪一款车子？
 
   2. 使用新数据源完成语言模型的训练
-  filename =("C:/Users/tyx51/file/train.txt")
-import pandas as pd
-content = pd.read_csv("train.txt",sep="\t")
-content.head()
-articles  = 
+
   3. 获得最优质的语言
  
   
