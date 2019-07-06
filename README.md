@@ -1,4 +1,5 @@
-# lesson-01 Assignment 
+# lesson-01 Assignment 如下： 
+
 1 复现课堂代码 
 
 noun_phrase => Article Adj* noun
