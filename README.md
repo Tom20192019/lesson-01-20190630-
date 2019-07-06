@@ -291,29 +291,71 @@ for i ,line in enumerate ((open("articles_9k.txt")))
       print("-"*4+' {} with probablity {}'.format(s1,p1))
       print("-"*4+' {} with probablity {}'.format(s1,p2)
   
+  
+  
   5. 完成以下问答和编程练习
   
   5.1 回答问题
   
   0. Can you come up out 3 sceneraies which use AI mehods?  
   medical, auot-drive , education, sale, home automation
+  
   1. How do we use Github; Why do we use Jupyter and Pycharm;
+  1.1 create a github repo
+  A repo is storge space where you project lives. it can be local to a folder on your computer , or it can be a storage space on github or anther online host.
+  1.2 create branches and perform operations 
+  Branchings can help you to work on different version of a repository at one time. 
+  how to use github :operations 
+  commit command 
+  now let’s make our first commit, follow the below steps:
+  click on "read me -chages" file which  we have just created.
+  click on the "edit" or a pencil icon in the rightmost cornoer of hte file.
+  once you click on that , an editor will open where you can type in the changes ro anything.
+  write a commit message whcih identifies your changes.
+  click commit changes in the end .
+  1.3 pull command 
+  pull command is the most important command in guthub, it tell the chages done in the file and request other contributors to view it as well as merget it with the master branch. 
+  1.4 merge command 
+  here comes the last command which merge the chnages into the main master branch. 
+  1.5 cloning and forking github repository 
+  cloning: Suppose you want to use some code which is present in a public repository , you can directly copy the contets by clong or downloading. refer to use the below screccsht for a better understanding . 
+  ForkingL Suppose,, you need some code which is present in a public repository , underyour repository and github account. 
+  for this, we need to fork a repository. 
+  
+  why do we use jupyter and Pycharm?
+  Jupyter is the three things: a collection of standars, a community, and a set of software tools. jupyter, is software that xreates a jupyter, is a document that supports mixing executable code, q=equations, visualization, and narrative text. Specially , jupyrt allow the user to bring together data, code and prose, to tell an interactive,computational story. 
+  
+  why do we use pycharm? 
+  ok. here there are reasons to consider making Pycharm your primary editor to write Python code.
+  1) code completion  pycharm has great code completion whether it;s for a built-in or an external package.
+  2) prdfessional tools
+  3) full-stack web develoment
+  4) scientific tools 
+  5) customizable & cross-platform 
+  
   
   2. What's the Probablity Model?
+  
   3. Can you came up wiht some sceneraies at which we use Probablity Model？
+  
   4. Why do we use probablity and what's the difficult points for programming based on parsing and pattern match?
+  
   5. What's the Language Model?
+  
   6. Can you came up with some sceneraies at which we could use Language Model?
   7. What's the 1-gram language model ?
+  
   8. what's the disadvanges and advantages of 1-gram language model？
+  
   9. what's the 2-gram model?
   
+  
+  
+  
+  
+  
   5.2 编程实践部分
-  1. 设计自己的句子生成器
-  2. 使用新数据源完成语言模型的训练
-  3. 获得最优质的语言
-   
-    5.2 编程实践部分
+
   1. 设计自己的句子生成器
   #一个客户在4S店售车现场，咨询汽车信息的场景可以定义为：
 human = """
